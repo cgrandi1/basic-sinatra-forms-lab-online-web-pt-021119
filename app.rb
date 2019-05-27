@@ -6,8 +6,6 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    Teamname = params["text"]
-    Coach = params[:Coach]
     erb :team
   end
 
