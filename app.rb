@@ -6,15 +6,15 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    # params[:name]
-    # params[:coach]
-    # params[:pg]
-    # params[:sg]
-    # params[:sf]
-    # params[:pf]
-    # params[:c]
+    @name = params[:name]
+    @coach = params[:coach]
+    @params[:pg]
+    params[:sg]
+    params[:sf]
+    params[:pf]
+    params[:c]
 
-    @all = "#{params[:name]}" "#{params[:coach]}" "#{params[:pg]}" "#{params[:sg]}" "#{params[:sf]}" "#{params[:pf]}" "#{params[:c]}"
+    @all = ["#{params[:name]}" "#{params[:coach]}" "#{params[:pg]}" "#{params[:sg]}" "#{params[:sf]}" "#{params[:pf]}" "#{params[:c]}"]
     erb :newteam
   end
 
