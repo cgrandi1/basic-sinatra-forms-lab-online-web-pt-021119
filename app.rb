@@ -21,7 +21,7 @@ class App < Sinatra::Base
     # @c = params[:c]
 
     @params = params
-    binding.pry
+    # binding.pry
     erb :newteam
   end
 
