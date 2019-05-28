@@ -1,6 +1,11 @@
 require 'sinatra/base'
 
 class App < Sinatra::Base
+
+  get '/' do
+    "<h1>Hellowww</h1>"
+  end
+
   get '/newteam' do
 
     erb :newteam
